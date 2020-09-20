@@ -9,34 +9,34 @@
 </head>
 <body>
 <div class="calcultor">
-	<form name="calc">
-	<input class ="screen" id="screen"  name = "display">
+	
+	<input class ="screen" id="screen1"  name = "display">
 	<div class="buttons">
-		<button id="clear" value="">C</button>
+		<button id="clear" value="c" onclick="getinput('c')">C</button>
 	    <button id="backspace" value="-">&#8592;</button>
 	    <button id="sign" value="-+">±</button>
-	    <button id="divide" value="\">÷</button>
-	    <button class="degits" value="7" onclick="document.calc.display.value+='7';">7</button>
-	    <button class="degits" value="8"onclick="insert(8)">8</button>
-	    <button class="degits" value="9">9</button>
-	    <button id="multiply" value="*">x</button>
-	    <button class="degits" value="4">4</button>
-	    <button class="degits" value="5">5</button>
-	    <button class="degits" value="6">6</button>
-	    <button id="minus" value="-">-</button>
-	     <button class="degits" value="1">1</button>
-	    <button class="degits" value="2">2</button>
-	    <button class="degits" value="3">3</button>
-	    <button id="plus" value="+">+</button>
-	    <button class="degits" value="0">0</button>
-	    <button class="degits" value=".">.</button>
-	    <button id="equal" value="=" onclick="result()">=</button>
+	    <button id="divide" value="\" onclick="getinput('/')">÷</button>
+	    <button class="degits"  value = "7" onclick="getinput(7)">7</button>
+	    <button class="degits" value="8" onclick="getinput(8)">8</button>
+	    <button class="degits" value="9" onclick="getinput(9)">9</button>
+	    <button id="multiply" value="*" onclick="getinput('*')">x</button>
+	    <button class="degits" value="4" onclick="getinput(4)">4</button>
+	    <button class="degits" value="5" onclick="getinput(5)">5</button>
+	    <button class="degits" value="6" onclick="getinput(6)">6</button>
+	    <button id="minus" value="-" onclick="getinput('-')">-</button>
+	     <button class="degits" value="1" onclick="getinput(1)">1</button>
+	    <button class="degits" value="2" onclick="getinput(2)">2</button>
+	    <button class="degits" value="3" onclick="getinput(3)">3</button>
+	    <button id="plus" value="+" onclick="getinput('+')">+</button>
+	    <button class="degits" value="0" onclick="getinput(0)">0</button>
+	    <button class="degits" value="." onclick="getinput('.')">.</button>
+	    <button id="equal" value="=" onclick="getinput('=')">=</button>
 
 
 
 	</div>
 </div>
-</form>
+
 <script type="text/javascript" src="scripit.js"></script>
 </body>
 </html>
