@@ -1,0 +1,53 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("https://images.pexels.com/photos/2041773/pexels-photo-2041773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.calcultor{
+
+	width: 220px;
+	height: auto;
+	margin: 3% auto;
+	background-color: 	#D3D3D3;
+	border-radius: 25px;
+	border :2px solid #5F9EA0;
+
+}
+.screen{
+	margin: 20px 0 0 15px;
+	padding-right: 9px;
+	height: 50px;
+	width: 80%;
+	background: #F0FFFF;
+	text-align: right;
+	border-radius: 10px;
+	border :2px solid #5F9EA0;
+	font-size: 30px;
+}
+
+.buttons{
+	width: 200px;
+	margin: 12px;
+}
+.buttons button {
+	width: 40px;
+	height: 40px;
+	padding: 0px;
+	margin: 0px 0px 10px 5px;
+	border-radius: 5px;
+	background: #808080;
+	color:white;
+}
+#clear{
+	background-color: red;
+	border :2px solid #5F9EA0;
+}
+#equal{
+	width: 90px;
+	background-color: #029;
+	border :2px solid ;
+
+}
