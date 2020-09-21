@@ -7,52 +7,61 @@
 // 	})
 // });
 
-
-
-function getinput(num){
-var x = num;
+//check when click on equal button if empty and give us alert 
+function getinput(val){
+var x = val;
 if(x === '='){
 document.getElementById('screen1').value= eval(document.getElementById('screen1').value);
 }else if(x === 'c'){
-	document.getElementById('screen1').value ='';
-}
+	document.getElementById('screen1').value = '';
+
+}//else if(x = '+' ||x = '-' ||x = '*' ||x = '/' ){
+// console.log("ok");
+// }
 else{
-	document.getElementById('screen1').value+=num;
+
+	document.getElementById('screen1').value+=x;
+	// var firstNum = document.getElementById('screen1').value;
 }
 	
 
 }
+//clear last character from input text
+//israa is vanigator ,,deema is driver
+function backspace(){
+	var input = document.getElementById('screen1');
+	var x = input.value;
+	if(x.length > 0){
+		x= x.substring(0 , x.length -1);
+		document.getElementById('screen1').value = x;
+	}
+     
+}
 
+// var users = ["israa" , "deema" , "Ahmad"];
 
+// for(var i = 0 ; i <users.length ; i++){
+// $('#users').append((i+1)+" "+users[i] +' <br>');
 
-// var pre = 0;
-// var precalc ;
-// var c= false;
-// var flag = false;
-// var screen =function (par){
-// 	if(par == '.' && flag == true){
-// 		return ;
-// 	}
-// 	if(c ==true){
-// 		$("#screen").val('');
-// 		c=false;
-// 	}
-// 	var r = $('#screen').val('')+par;
-// 	if(par == '.'){
-// 		flag = true;
-// 	}else{
-// 		r = r * 1;
-// 	}
-// 	$('#screen').val('');
 // }
 
-// var calculate = function(par){
-// 	if(pre){
-// 		result();
+
+
+
+//clear last character from input text by jquerey
+
+
+// $('#backspace').click(function (){
+// 	var x = $('#screen1').value;
+// 	console.log(x);
+	
+// 	if(x.length > 0){
+// 		x= x.substring(0 , x.length -1);
+// 		$('#screen1').value = x;
 // 	}
-// 	flag = false;
-// 	c =true;
-// 	pre = $('#screen').val('');
-// 	precalc = par;
-// 	}
+// })
+
+
+
+
 
